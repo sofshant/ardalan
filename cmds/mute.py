@@ -16,8 +16,14 @@ class mute(commands.Cog):
             wait = 1 * duration
             await asyncio.sleep(wait)
         elif unit == "m":
-                wait = 60 * duration
-                await asyncio.sleep(wait)
+            wait = 60 * duration
+            await asyncio.sleep(wait)
+        elif unit == "h":
+            wait = 60 * duration * 60
+            await asynco.sleep(wait)
+        elif unit == "d":
+            wait = 60 * duration * 60 * 24
+            await asynco.sleep(wait)
         await user.remove_roles(roleobject)
         await ctx.send(f":white_check_mark: {user} was unmuted")    
 
