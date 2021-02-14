@@ -9,8 +9,7 @@ class brain(commands.Cog):
         self.client = client
 
     @commands.command(aliases=['brain', 'brainsize'])
-    async def _brain(self, ctx):
-        username = ctx.message.author.name
+    async def _brain(self, ctx, user: discord.User=None):
         responses = ['incredibly tiny',
                      'very very small',
                      'super small',
@@ -25,9 +24,11 @@ class brain(commands.Cog):
                      'kinda big',
                      'large',
                      'huge',
-                     'insanely massive',
-                     'unkown brain size. Try again']
-        await ctx.send(f'{username} has a {random.choice(responses)} brain.')
+                     'insanely massive']
+        if not user:
+            await ctx.send(f'{ctx.author.name} has a {random.choice(responses)} brain.')
+        else:
+            await ctx.send(f'{user.name} has a {random.choice(responses)} brain.')
 
 def setup(client):
     client.add_cog(brain(client))

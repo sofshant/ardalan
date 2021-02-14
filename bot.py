@@ -28,7 +28,11 @@ async def ping(ctx):
 
 @client.event
 async def on_ready():
-    print('Hi stockr')
+    print('Hi stockr \n')
+
+    print('Server list:')
+    for guild in client.guilds:
+        print(guild.name)
 
 
 client.run('ODA2Njc5MjQ1OTg3NTEyMzIy.YBs8lw.PfHxlPBvBuPrT0hVS0xUT_HtGhA')

@@ -8,10 +8,20 @@ class mute(commands.Cog):
         self.client = client
 
     @commands.command()
-    async def mute(self, ctx, user : discord.Member, duration = 0,*, unit = None):
-        roleobject = discord.utils.get(ctx.message.guild.roles, id=809178860229885954)
-        await ctx.send(f":white_check_mark: Muted {user} for {duration}{unit}")
-        await user.add_roles(roleobject)
+    @commands.has_permissions(ban_members=True)
+    async def mute(self, ctx, user : discord.Member, duration = 0, unit = None):
+        role = discord.utils.get(ctx.guild.roles, name="ardamute")
+        if not role:
+            try:
+                muted = await ctx.guild.create_role(name="ardamute", reason="mute role")
+                for channel in ctx.guild.channels:
+                    await channel.set_permissions(ardamute, send_messages=False)
+            except discord.Forbidden:
+                return await ctx.send("I have no permissions to make a muted role")
+
+        ardamute = discord.utils.get(ctx.message.guild.roles, id=809178860229885954)
+        await ctx.send(f"Muted {user.mention} for {duration}{unit}")
+        await user.add_roles(ardamute)
         if unit == "s":
             wait = 1 * duration
             await asyncio.sleep(wait)
@@ -24,8 +34,13 @@ class mute(commands.Cog):
         elif unit == "d":
             wait = 60 * duration * 60 * 24
             await asynco.sleep(wait)
-        await user.remove_roles(roleobject)
-        await ctx.send(f":white_check_mark: {user} was unmuted")    
+        elif unit == "":
+            wait = 60 * 15
+            await asynco.sleep(wait)
+            
+        await user.remove_roles(ardamute)
+
+        
 
 
 def setup(client):
