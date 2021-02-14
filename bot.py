@@ -35,4 +35,4 @@ async def on_ready():
         print(guild.name)
 
 
-client.run('ODA2Njc5MjQ1OTg3NTEyMzIy.YBs8lw.PfHxlPBvBuPrT0hVS0xUT_HtGhA')
+client.run('put your token over here')
