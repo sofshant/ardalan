@@ -12,5 +12,6 @@ TODO: <br>
  -Add a help command :|
 
 To run the bot you need to download Python (preferably version 3) and the discord.py library. Then you just run the bot.py file.
+I will make more detailed instructions soon.
 
 If you need any help or have any questions feel free to email me at me@sofshant.club or at my discord Sofshant#0001
