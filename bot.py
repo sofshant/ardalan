@@ -3,7 +3,7 @@ import os
 from discord.ext import commands, tasks
 from itertools import cycle
 
-client = commands.Bot(command_prefix = '$')
+client = commands.Bot(command_prefix = '$')  #you can change prefix here
 
 @client.command()
 async def load(ctx, extension):
@@ -28,11 +28,7 @@ async def ping(ctx):
 
 @client.event
 async def on_ready():
-    print('Hi stockr \n')
-
-    print('Server list:')
-    for guild in client.guilds:
-        print(guild.name)
+    print('bot ready \n')
 
 
-client.run('ODA2Njc5MjQ1OTg3NTEyMzIy.YBs8lw.PfHxlPBvBuPrT0hVS0xUT_HtGhA')
+client.run('token here') #put discord token between the quotations
