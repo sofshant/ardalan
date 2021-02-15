@@ -30,5 +30,4 @@ async def ping(ctx):
 async def on_ready():
     print('bot ready \n')
 
-
 client.run('token here') #put discord token between the quotations
