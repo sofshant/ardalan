@@ -16,4 +16,4 @@ I will make more detailed instructions soon when done with rest of bot.
 
 If you need any help or have any questions feel free to email me at me@sofshant.club or at my discord Sofshant#0001
 
-Credits to the youtube tutorial by lucas, stackoverflow and gtskill
+Credits to the youtube tutorial by lucas, stack overflow and gtskill
