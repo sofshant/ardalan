@@ -8,7 +8,8 @@ Link for the full bot: https://discord.com/api/oauth2/authorize?client_id=806679
 
 TODO: <br>
  -Add a error handler<br>
- -Add a few more misc commands
+ -Add a few more misc commands<br>
+ -Add a help command :|
 
 To run the bot you need to download Python (preferably version 3) and the discord.py library. Then you just run the bot.py file.
 
