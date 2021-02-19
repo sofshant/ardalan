@@ -8,8 +8,8 @@ class responses(commands.Cog):
 
     @commands.Cog.listener()
     async def on_message(self, message):
-        if 'ardalan' in message.content.lower():
-            await message.channel.send('hi')
+        if 'sofshant' in message.content.lower():
+            await message.channel.send('aha sofshant is very hot')
 
 
 
