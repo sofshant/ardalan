@@ -3,7 +3,7 @@ import os
 from discord.ext import commands, tasks
 from dotenv import load_dotenv
 
-client = commands.Bot(command_prefix = '$') #you can change prefix here
+client = commands.Bot(command_prefix = '$', help_command=None) #you can change prefix on the $
 
 @client.command()
 async def load(ctx, extension):
