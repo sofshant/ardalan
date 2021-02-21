@@ -7,9 +7,8 @@ Might make the source of the full version public sometime in the future idk.
 Link for the full bot: https://discord.com/api/oauth2/authorize?client_id=806679245987512322&permissions=0&scope=bot
 
 TODO: <br>
- -Add a error handler<br>
- -Add a few more misc commands<br>
- -Add a help command :|
+ -Add a error handler
+
 
 To run the bot you need to download Python (preferably version 3) and the discord.py library. Then you just run the bot.py file.
 I will make more detailed instructions soon when done with rest of bot.
