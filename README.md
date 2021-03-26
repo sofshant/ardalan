@@ -1,4 +1,7 @@
 # ardalan
+
+**js bot coming soon!**
+
 a little python bot I worked on.
 This is not the full version btw. This will not include the mute or warn commands. Those are only on the full version!
 
