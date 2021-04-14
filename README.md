@@ -2,7 +2,10 @@
 
 **js bot coming soon!**
 
-a little python bot I worked on.
+a little python bot I worked on. 
+
+This is definitely the most autistic and most useless bot on discord.
+
 This is not the full version btw. This will not include the mute or warn commands. Those are only on the full version!
 
 Might make the source of the full version public sometime in the future idk.
